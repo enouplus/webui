@@ -1,0 +1,31 @@
+.sbar,.sbar_o{position: fixed;top: 0;height: 100%;display: none;}
+.sbar{background-color: white;min-width: 40%;max-width: 80%;overflow-y: auto;}
+.sbar::-webkit-scrollbar{display: none;}
+.sbar_o{width: 100%;background-color: black;opacity: 0.5;}
+
+.sbar_links>a,.sbar_title
+{
+    border-left: 0.5rem solid #FFF;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.sbar_title{font-weight: bold;}
+
+.sbar_links>a:hover
+{
+ 
+  border-left-color: #0099ff;
+  background-color: #f1f9ff;
+}
+
+@media only screen and (min-width: 576px) {.sbar{min-width: 20%;}}
+.sbar_block
+{
+  display: block;
+}
+
+
