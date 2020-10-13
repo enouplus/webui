@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://enouplus.github.io/webui/appbar.css">
+    <link rel="stylesheet" href="https://enouplus.github.io/webui/sbar.css">
+    <script src="https://enouplus.github.io/webui/sbar.js"></script>
+
     <style>
         body
         {
@@ -13,28 +17,80 @@
         }
     </style>
 
-    <link rel="stylesheet" href="https://enouplus.github.io/webui/sbar.css">
-    <script src="https://enouplus.github.io/webui/sbar.js"></script>
-
-
 </head>
 <body>
     
-    <button data-sbar="sbar" data-sbar_o="sbar_o" onclick="sbar(this)">SHOW</button>
+
+   
+    <div class="appbar">
+        <div data-sbar="sbar" data-sbar_o="sbar_o" onclick="sbar(this)">MENU</div>
+        <div>Brand Name</div>
+        <div>HOME</div>
+    </div>
 
 
-    <div id="sbar_o" class="sbar_o" data-sbar="sbar" data-sbar_o="sbar_o" onclick="sbar(this)"></div>
+    <nav class="sbar" id="sbar">
 
-    <nav id="sbar" class="sbar">
-        <div class="sbar_title">MENU</div>
-        <div class="sbar_links">
-            <a href="">Dashboard</a>
-            <a href="">Content</a>
-            <a href="">Categories</a>
-            <a href="">Posts</a>
-            <a href="">Log out</a>
+        
+        <div class="sbar_h">
+            <div>UDYOGAINFO</div>
+            <div data-sbar="sbar" data-sbar_o="sbar_o" onclick="sbar(this)">&#10006;</div>
         </div>
+
+        <div class="sbar_links_title">JOBS</div>
+        <div class="sbar_links">
+            <a href="http://127.0.0.1:5500/index.html">All Govt Jobs</a>
+            <a href="">State Govt Jobs</a>
+            <a href="">Central Govt Jobs</a>
+            <a href="">Other Govt Jobs</a>
+        </div>
+
+        <div onclick="sbar_droplinks_title(this)" data-sbar_droplinks="sbar_droplinks_states" class="sbar_droplinks_title">Districts</div>
+        <div id="sbar_droplinks_states" class="sbar_droplinks sbar_droplinks_hidden">
+            <a href="">Mandya</a>
+            <a href="">Mysore</a>
+            <a href="">Banglore</a>
+            <a href="">Hubli</a>
+            <a href="">Mandya</a>
+            <a href="">Mysore</a>
+            <a href="">Banglore</a>
+            <a href="">Hubli</a>
+            <a href="">Mandya</a>
+            <a href="">Mysore</a>
+            <a href="">Banglore</a>
+            <a href="">Hubli</a>
+            <a href="">Mandya</a>
+            <a href="">Mysore</a>
+            <a href="">Banglore</a>
+            <a href="">Hubli</a>
+            <a href="">Mandya</a>
+            <a href="">Mysore</a>
+            <a href="">Banglore</a>
+            <a href="">Hubli</a>
+            <a href="">Mandya</a>
+            <a href="">Mysore</a>
+            <a href="">Banglore</a>
+            <a href="">Hubli</a>
+        </div>
+
+
+        <div onclick="sbar_droplinks_title(this)" data-sbar_droplinks="sbar_droplinks_edu" class="sbar_droplinks_title sbar_droplinks_title_dropped">Search Jobs By Education</div>
+        <div id="sbar_droplinks_edu" class="sbar_droplinks sbar_droplinks_shown">
+            <a href="">SSLC</a>
+            <a href="">PUC</a>
+            <a href="">DEGREE</a>
+            <a href="">Master Degree</a>
+        </div>
+
+
+
     </nav>
+    <div data-sbar="sbar" data-sbar_o="sbar_o" onclick="sbar(this)" id="sbar_o" class="sbar_o"></div>
+
+
+
+   
+
 
 </body>
 </html>
